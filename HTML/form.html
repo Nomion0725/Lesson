@@ -1,18 +1,39 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
   <head>
+    <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="/style.css" />
+    <link rel="stylesheet" href="style1.css" />
     <title>Form</title>
   </head>
   <body>
-    <section>
-      <form action="">
-        <h1>Form</h1>
-        Name: <input type="text" placeholder="name" /><br />
-        Email: <input type="text" placeholder="email" /><br />
-        Address <input type="text" placeholder="address" /><br />
-        <input type="radio" />male <input type="radio" />female
-      </form>
-    </section>
+    <form action="">
+      <fieldset>
+        <legend>Form</legend>
+        <label for="lname">Last name:</label><br />
+        <input type="text" name="fname" id="lname" /><br />
+        <label for="fname">First name:</label><br />
+        <input type="text" name="fname" id="fname" /><br />
+        <label for="priority">Priority</label>
+        <select name="priority" id="priority">
+          <option value="low">low</option>
+          <option value="medium">medium</option>
+          <option value="high">high</option></select
+        ><br />
+        <label for="stu_code">Student code:</label><br />
+        <input type="text" name="stu_code" id="stu_code" /><br />
+        <label for="email">Email:</label><br />
+        <input type="email" name="email" id="email" /><br />
+        <label for="gender">Gender:</label>
+        <input type="radio" name="gender" id="male" />male
+        <input type="radio" name="gender" id="female" />female <br />
+        <label for="birthday">Birthday:</label>
+        <input type="date" /><br />
+        <textarea name="address" id="address"></textarea><br />
+        <label for="cv">Attach CV:</label>
+        <input type="file" name="file" id="file" /><br />
+        <input type="submit" />
+      </fieldset>
+    </form>
   </body>
 </html>

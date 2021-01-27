@@ -1,0 +1,30 @@
+body {
+  background-color: #c4cdc1;
+}
+legend {
+  font-size: 30px;
+}
+form {
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+}
+input[type="text"],
+[type="email"] {
+  width: 65%;
+}
+textarea {
+  width: 65%;
+}
+label {
+  padding: 12px 12px 12px 0px;
+}
+input[type="submit"] {
+  background-color: #4caf50;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  float: right;
+}
